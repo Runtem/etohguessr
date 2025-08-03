@@ -1,280 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random JTOH Tower</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            text-align: center;
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-        }
-        h1 {
-            color: #ff3838;
-            text-shadow: 0 0 5px #ff3838;
-        }
-        .container {
-            margin-top: 30px;
-        }
-        .image-container {
-            margin: 20px 0;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-            background: #2a2a2a;
-            padding: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        button {
-            background-color: #ff3838;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            margin-top: 15px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        }
-        button:hover {
-            background-color: #ff1c1c;
-            transform: scale(1.05);
-        }
-        .loading {
-            color: #aaa;
-            font-style: italic;
-            margin: 20px 0;
-        }
-        .tower-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 15px 0;
-            color: #fff;
-            text-shadow: 0 0 3px #ff3838;
-        }
-        .error {
-            color: #ff6b6b;
-            padding: 12px;
-            border-radius: 6px;
-            background-color: #330000;
-            margin: 15px 0;
-            text-align: left;
-        }
-    </style>
-</head>
-<body>
-    <h1>JTOH Towers of Hell</h1>
-    <h2>Random Tower Viewer</h2>
-    
-    <div class="container">
-        <div id="error" class="error" style="display: none;"></div>
-        <div id="loading" class="loading">Loading a random tower...</div>
-        
-        <div id="tower-container" style="display: none;">
-            <div class="tower-name" id="tower-name"></div>
-            <div class="image-container">
-                <img id="tower-image" alt="Random Tower from JTOH">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random JTOH Tower</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                text-align: center;
+                background-color: #1a1a1a;
+                color: #e0e0e0;
+            }
+            h1 {
+                color: #ff3838;
+                text-shadow: 0 0 5px #ff3838;
+            }
+            .container {
+                margin-top: 30px;
+            }
+            .image-container {
+                margin: 20px 0;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                background: #2a2a2a;
+                padding: 10px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            button {
+                background-color: #ff3838;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                font-size: 16px;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s;
+                margin-top: 15px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            }
+            button:hover {
+                background-color: #ff1c1c;
+                transform: scale(1.05);
+            }
+            .loading {
+                color: #aaa;
+                font-style: italic;
+                margin: 20px 0;
+            }
+            .tower-name {
+                font-size: 24px;
+                font-weight: bold;
+                margin: 15px 0;
+                color: #fff;
+                text-shadow: 0 0 3px #ff3838;
+            }
+            .error {
+                color: #ff6b6b;
+                padding: 12px;
+                border-radius: 6px;
+                background-color: #330000;
+                margin: 15px 0;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JTOH Towers of Hell</h1>
+        <h2>Random Tower Viewer</h2>
+
+        <div class="container">
+            <div id="error" class="error" style="display: none"></div>
+            <div id="loading" class="loading">Loading a random tower...</div>
+
+            <div id="tower-container" style="display: none">
+                <div class="tower-name" id="tower-name"></div>
+                <div class="image-container">
+                    <img id="tower-image" alt="Random Tower from JTOH" />
+                </div>
             </div>
+
+            <button id="random-button">New Random Tower</button>
         </div>
-        
-        <button id="random-button">New Random Tower</button>
-    </div>
 
-    <script>
-        // DOM elements
-        const towerContainer = document.getElementById('tower-container');
-        const towerImage = document.getElementById('tower-image');
-        const towerName = document.getElementById('tower-name');
-        const randomButton = document.getElementById('random-button');
-        const loadingText = document.getElementById('loading');
-        const errorDiv = document.getElementById('error');
-        
-        // Fandom Wiki domain
-        const WIKI_DOMAIN = 'jtoh.fandom.com';
-        const BASE_API = `https://${WIKI_DOMAIN}/api.php`;
-        
-        // Public CORS proxy to avoid CORS issues
-        const CORS_PROXY = 'https://api.allorigins.win/raw?url=';
-        
-        // Category of tower pages (main content only)
-        const TOWER_CATEGORY = 'Towers';
-        
-        // Pages to exclude (user blogs, forums, etc.)
-        const EXCLUDED_NAMESPACES = [
-            'User:', 'User blog:', 'File:', 'Special:', 'MediaWiki:', 
-            'Template:', 'Help:', 'Category:', 'Forum:'
-        ];
+        <script>
+            // DOM elements
+            const towerContainer = document.getElementById("tower-container");
+            const towerImage = document.getElementById("tower-image");
+            const towerName = document.getElementById("tower-name");
+            const randomButton = document.getElementById("random-button");
+            const loadingText = document.getElementById("loading");
+            const errorDiv = document.getElementById("error");
 
-        // Hide error
-        function hideError() {
-            errorDiv.style.display = 'none';
-        }
+            // Fandom Wiki domain
+            const WIKI_DOMAIN = "jtoh.fandom.com";
+            const BASE_API = `https://${WIKI_DOMAIN}/api.php`;
 
-        // Show error
-        function showError(message) {
-            errorDiv.textContent = message;
-            errorDiv.style.display = 'block';
-            loadingText.style.display = 'none';
-        }
+            // Public CORS proxy to avoid CORS issues
+            const CORS_PROXY = "https://api.allorigins.win/raw?url=";
 
-        // Check if page title should be excluded
-        function isExcluded(title) {
-            return EXCLUDED_NAMESPACES.some(ns => title.startsWith(ns));
-        }
+            // Category of tower pages (main content only)
+            const TOWER_CATEGORY = "Towers";
 
-        // Fetch list of tower pages from category
-        async function fetchTowerPages() {
-            const url = `${CORS_PROXY}${encodeURIComponent(
-                `${BASE_API}?action=query&format=json&list=categorymembers&cmtitle=Category:${TOWER_CATEGORY}&cmlimit=500&cmtype=page`
-            )}`;
+            // Pages to exclude (user blogs, forums, etc.)
+            const EXCLUDED_NAMESPACES = [
+                "User:",
+                "User blog:",
+                "File:",
+                "Special:",
+                "MediaWiki:",
+                "Template:",
+                "Help:",
+                "Category:",
+                "Forum:",
+            ];
 
-            try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
-                
-                const text = await response.text();
-                // Allorigins returns a JSON wrapper; extract content
-                const data = JSON.parse(text);
-                
-                if (data.contents) {
-                    const parsed = JSON.parse(data.contents);
-                    if (parsed.query) {
-                        return parsed.query.categorymembers
-                            .map(page => ({ ...page, title: page.title.trim() }))
-                            .filter(page => !isExcluded(page.title));
-                    }
-                }
-                throw new Error("Invalid or empty response from API");
-            } catch (error) {
-                console.error("Error fetching tower pages:", error);
-                throw error;
+            // Hide error
+            function hideError() {
+                errorDiv.style.display = "none";
             }
-        }
 
-        // Fetch images from a specific page
-        async function fetchImagesFromPage(pageId) {
-            const url = `${CORS_PROXY}${encodeURIComponent(
-                `${BASE_API}?action=query&format=json&prop=images&imlimit=50&pageids=${pageId}`
-            )}`;
-
-            try {
-                const response = await fetch(url);
-                const text = await response.text();
-                const data = JSON.parse(text);
-                
-                if (data.contents) {
-                    const parsed = JSON.parse(data.contents);
-                    const page = Object.values(parsed.query.pages)[0];
-                    
-                    if (page.images) {
-                        // Filter out unwanted image types
-                        return page.images
-                            .map(img => img.title)
-                            .filter(title => 
-                                !title.toLowerCase().includes('icon') &&
-                                !title.toLowerCase().includes('.ogg') &&
-                                !title.toLowerCase().includes('.webm') &&
-                                (title.toLowerCase().includes('tower') || 
-                                 title.toLowerCase().includes('image') ||
-                                 title.toLowerCase().includes('screenshot') ||
-                                 title.toLowerCase().includes('logo'))
-                            );
-                    }
-                }
-                return [];
-            } catch (error) {
-                console.error("Error fetching images:", error);
-                return [];
+            // Show error
+            function showError(message) {
+                errorDiv.textContent = message;
+                errorDiv.style.display = "block";
+                loadingText.style.display = "none";
             }
-        }
 
-        // Get direct image URL
-        async function getImageUrl(imageTitle) {
-            const url = `${CORS_PROXY}${encodeURIComponent(
-                `${BASE_API}?action=query&format=json&prop=imageinfo&iiprop=url&titles=${encodeURIComponent(imageTitle)}`
-            )}`;
-
-            try {
-                const response = await fetch(url);
-                const text = await response.text();
-                const data = JSON.parse(text);
-                
-                if (data.contents) {
-                    const parsed = JSON.parse(data.contents);
-                    const page = Object.values(parsed.query.pages)[0];
-                    
-                    if (page.imageinfo && page.imageinfo.length > 0) {
-                        return page.imageinfo[0].url;
-                    }
-                }
-                return null;
-            } catch (error) {
-                console.error("Error getting image URL:", error);
-                return null;
+            // Check if page title should be excluded
+            function isExcluded(title) {
+                return EXCLUDED_NAMESPACES.some((ns) => title.startsWith(ns));
             }
-        }
 
-        // Main function to load a random tower
-        async function loadRandomTower() {
-            hideError();
-            loadingText.style.display = 'block';
-            towerContainer.style.display = 'none';
-            
-            try {
-                const towerPages = await fetchTowerPages();
-                
-                if (towerPages.length === 0) {
-                    showError("No valid tower pages found.");
-                    return;
-                }
+            // Fetch list of tower pages from category
+            async function fetchTowerPages() {
+                const url = `${CORS_PROXY}${encodeURIComponent(
+                    `${BASE_API}?action=query&format=json&list=categorymembers&cmtitle=Category:${TOWER_CATEGORY}&cmlimit=500&cmtype=page`
+                )}`;
 
-                // Try up to 10 times to find a tower with images
-                let attempts = 0;
-                while (attempts < 10) {
-                    const randomIndex = Math.floor(Math.random() * towerPages.length);
-                    const selectedTower = towerPages[randomIndex];
-                    
-                    const images = await fetchImagesFromPage(selectedTower.pageid);
-                    
-                    if (images.length > 0) {
-                        const randomImage = images[Math.floor(Math.random() * images.length)];
-                        const imageUrl = await getImageUrl(randomImage);
-                        
-                        if (imageUrl) {
-                            towerName.textContent = selectedTower.title;
-                            towerImage.src = imageUrl;
-                            towerContainer.style.display = 'block';
-                            loadingText.style.display = 'none';
-                            return;
+                try {
+                    const response = await fetch(url);
+                    if (!response.ok)
+                        throw new Error(`HTTP ${response.status}`);
+
+                    const text = await response.text();
+                    // Allorigins returns a JSON wrapper; extract content
+                    const data = JSON.parse(text);
+
+                    if (data.contents) {
+                        const parsed = JSON.parse(data.contents);
+                        if (parsed.query) {
+                            return parsed.query.categorymembers
+                                .map((page) => ({
+                                    ...page,
+                                    title: page.title.trim(),
+                                }))
+                                .filter((page) => !isExcluded(page.title));
                         }
                     }
-                    
-                    attempts++;
+                    throw new Error("Invalid or empty response from API");
+                } catch (error) {
+                    console.error("Error fetching tower pages:", error);
+                    throw error;
                 }
-                
-                // If all attempts failed
-                showError("Could not find a tower with valid images after several tries.");
-                
-            } catch (error) {
-                showError("Failed to load tower: " + (error.message || error));
             }
-        }
 
-        // Event listeners
-        randomButton.addEventListener('click', loadRandomTower);
-        
-        // Load on page start
-        window.addEventListener('load', loadRandomTower);
-    </script>
-</body>
+            // Fetch images from a specific page
+            async function fetchImagesFromPage(pageId) {
+                const url = `${CORS_PROXY}${encodeURIComponent(
+                    `${BASE_API}?action=query&format=json&prop=images&imlimit=50&pageids=${pageId}`
+                )}`;
+
+                try {
+                    const response = await fetch(url);
+                    const text = await response.text();
+                    const data = JSON.parse(text);
+
+                    if (data.contents) {
+                        const parsed = JSON.parse(data.contents);
+                        const page = Object.values(parsed.query.pages)[0];
+
+                        if (page.images) {
+                            // Filter out unwanted image types
+                            return page.images
+                                .map((img) => img.title)
+                                .filter(
+                                    (title) =>
+                                        !title.toLowerCase().includes("icon") &&
+                                        !title.toLowerCase().includes(".ogg") &&
+                                        !title
+                                            .toLowerCase()
+                                            .includes(".webm") &&
+                                        (title
+                                            .toLowerCase()
+                                            .includes("tower") ||
+                                            title
+                                                .toLowerCase()
+                                                .includes("image") ||
+                                            title
+                                                .toLowerCase()
+                                                .includes("screenshot") ||
+                                            title
+                                                .toLowerCase()
+                                                .includes("logo"))
+                                );
+                        }
+                    }
+                    return [];
+                } catch (error) {
+                    console.error("Error fetching images:", error);
+                    return [];
+                }
+            }
+
+            // Get direct image URL
+            async function getImageUrl(imageTitle) {
+                const url = `${CORS_PROXY}${encodeURIComponent(
+                    `${BASE_API}?action=query&format=json&prop=imageinfo&iiprop=url&titles=${encodeURIComponent(
+                        imageTitle
+                    )}`
+                )}`;
+
+                try {
+                    const response = await fetch(url);
+                    const text = await response.text();
+                    const data = JSON.parse(text);
+
+                    if (data.contents) {
+                        const parsed = JSON.parse(data.contents);
+                        const page = Object.values(parsed.query.pages)[0];
+
+                        if (page.imageinfo && page.imageinfo.length > 0) {
+                            return page.imageinfo[0].url;
+                        }
+                    }
+                    return null;
+                } catch (error) {
+                    console.error("Error getting image URL:", error);
+                    return null;
+                }
+            }
+
+            // Main function to load a random tower
+            async function loadRandomTower() {
+                hideError();
+                loadingText.style.display = "block";
+                towerContainer.style.display = "none";
+
+                try {
+                    // Call YOUR serverless function (replace with your Vercel/Netlify URL)
+                    const response = await fetch(
+                        "https://etohguessr.vercel.app/api/random-tower"
+                    );
+                    const data = await response.json();
+
+                    if (data.error) throw new Error(data.error);
+
+                    towerName.textContent = data.title;
+
+                    if (data.imageUrl) {
+                        towerImage.src = data.imageUrl;
+                        towerContainer.style.display = "block";
+                    } else {
+                        towerImage.src =
+                            "https://via.placeholder.com/600x400?text=No+Image+Available";
+                        towerContainer.style.display = "block";
+                    }
+
+                    loadingText.style.display = "none";
+                } catch (error) {
+                    showError("Could not load tower: " + error.message);
+                }
+            }
+
+            // Event listeners
+            randomButton.addEventListener("click", loadRandomTower);
+
+            // Load on page start
+            window.addEventListener("load", loadRandomTower);
+        </script>
+    </body>
 </html>
