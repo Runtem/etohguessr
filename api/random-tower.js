@@ -82,6 +82,7 @@ module.exports = async (req, res) => {
             );
             if (imageUrlRes.ok) {
                 const urlData = await imageUrlRes.json();
+                console.log(urlData);
                 const imgPage = Object.values(urlData.query.pages)[0];
                 imageUrl = imgPage.imageinfo?.[0]?.url || null;
             }
