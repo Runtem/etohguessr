@@ -1,6 +1,3 @@
-// Vercel Serverless Function: api/random-tower.js
-const fetch = require('node-fetch');
-
 const WIKI_API = 'https://jtoh.fandom.com/api.php';
 
 module.exports = async (req, res) => {
