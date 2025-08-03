@@ -59,6 +59,7 @@ module.exports = async (req, res) => {
 
     // Try to get image from infobox
     if (wikitext) {
+      console.log("success");
       imageName = extractInfoboxImage(wikitext);
     }
 
