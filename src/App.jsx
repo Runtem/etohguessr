@@ -1,4 +1,3 @@
-// ImageGuessGame.jsx
 import { useState, useEffect } from "react";
 import './App.css';
 
@@ -27,7 +26,7 @@ export function Button({ children, onClick, className = "" }) {
 }
 
 // Example dataset (local images with multiple possible answers)
-// Place images in your public folder (e.g. public/images/cat.jpg)
+// Place images in your public folder (e.g. public/images/ToM.jpg)
 const images = [
   { url: "/images/ToM.jpg", answers: ["ToM", "Tower of Madness"] },
   { url: "/images/CoHaD.jpg", answers: ["CoHaD", "Citadel of Heights and Depths"] },
@@ -51,13 +50,30 @@ function shuffleArray(arr) {
 }
 
 export default function ImageGuessGame() {
-  const [shuffledImages, setShuffledImages] = useState(shuffleArray(images));
+  const [shuffledImages, setShuffledImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [guess, setGuess] = useState("");
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [highScore, setHighScore] = useState(0);
   const [lastCorrectAnswer, setLastCorrectAnswer] = useState(null);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // Preload images before starting the game
+  useEffect(() => {
+    let loadedCount = 0;
+    images.forEach((img) => {
+      const imageObj = new Image();
+      imageObj.src = img.url;
+      imageObj.onload = () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          setShuffledImages(shuffleArray(images));
+          setImagesLoaded(true);
+        }
+      };
+    });
+  }, []);
 
   useEffect(() => {
     const storedHigh = parseInt(localStorage.getItem("highScore"), 10);
@@ -103,6 +119,14 @@ export default function ImageGuessGame() {
     setCurrentIndex(0);
     setLastCorrectAnswer(null);
   };
+
+  if (!imagesLoaded) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
+        <h1 className="text-xl font-bold">Loading images...</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
