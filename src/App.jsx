@@ -11,8 +11,6 @@ export function Card({ children, className = "" }) {
     );
 }
 
-// vercelllllllyljhtykkjotykjytpkjoptyj
-
 export function CardContent({ children, className = "" }) {
     return <div className={`p-4 ${className}`}>{children}</div>;
 }
@@ -28,7 +26,8 @@ export function Button({ children, onClick, className = "" }) {
     );
 }
 
-const images = [
+// --- Image Sets ---
+const defaultImages = [
     { url: "/images/ToM.jpg", answers: ["ToM", "Tower of Madness"] },
     {
         url: "/images/CoHaD.jpg",
@@ -56,6 +55,43 @@ const images = [
     },
 ];
 
+const pitOfMiseryImages = [
+    {
+        url: "/images/ToMDC.jpg",
+        answers: ["ToMDC", "Tower of Modernistic Design Choices"],
+    },
+    { url: "/images/CoIV.jpg", answers: ["CoIV", "Citadel of Infinite Void"] },
+    { url: "/images/ToBF.jpg", answers: ["ToBF", "Tower of Blind Fate"] },
+    { url: "/images/ToEV.jpg", answers: ["ToEV", "Tower of Eternal Void"] },
+    {
+        url: "/images/ToOLC.jpg",
+        answers: ["ToOLC", "Tower of Overthinking Life Choices"],
+    },
+    {
+        url: "/images/ToSE.jpg",
+        answers: ["ToSE", "Tower of Shunning Excursion"],
+    },
+    { url: "/images/ToSF.jpg", answers: ["ToSF", "Tower of Spiralling Fates"] },
+    {
+        url: "/images/TotRP.jpg",
+        answers: ["TotRP", "Tower of The Roof's Pique"],
+    },
+    {
+        url: "/images/ToVH.jpg",
+        answers: ["ToVH", "Tower of Vacant Hindrances"],
+    },
+    { url: "/images/ToWM.jpg", answers: ["ToWM", "Tower of Water Melon"] },
+    {
+        url: "/images/ToXIC.jpg",
+        answers: ["ToXIC", "Tower of Xerially Infuriating Calamity"],
+    },
+    {
+        url: "/images/ToVM.jpg",
+        answers: ["ToVM", "Tower of Vindictive Maneuvers"],
+    },
+    { url: "/images/WaT.jpg", answers: ["WaT", "Was a Tower"] },
+];
+
 function shuffleArray(arr) {
     const copy = [...arr];
     for (let i = copy.length - 1; i > 0; i--) {
@@ -66,6 +102,9 @@ function shuffleArray(arr) {
 }
 
 export default function ImageGuessGame() {
+    const [includePit, setIncludePit] = useState(false);
+    const [selectedSetName, setSelectedSetName] = useState("");
+    const [imageSet, setImageSet] = useState(null); // null = not chosen yet
     const [shuffledImages, setShuffledImages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [guess, setGuess] = useState("");
@@ -75,27 +114,56 @@ export default function ImageGuessGame() {
     const [lastCorrectAnswer, setLastCorrectAnswer] = useState(null);
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
+    // Preload images after dataset is chosen
     useEffect(() => {
+        if (!imageSet) return;
         let loadedCount = 0;
-        images.forEach((img) => {
+        const total = imageSet.length;
+
+        imageSet.forEach((img) => {
             const imageObj = new Image();
             imageObj.src = img.url;
             imageObj.onload = () => {
                 loadedCount++;
-                if (loadedCount === images.length) {
-                    setShuffledImages(shuffleArray(images));
+                if (loadedCount === total) {
+                    setShuffledImages(shuffleArray(imageSet));
+                    setImagesLoaded(true);
+                }
+            };
+            // guard in case some images 404 — still counts them so preload doesn't hang
+            imageObj.onerror = () => {
+                loadedCount++;
+                if (loadedCount === total) {
+                    setShuffledImages(shuffleArray(imageSet));
                     setImagesLoaded(true);
                 }
             };
         });
-    }, []);
+    }, [imageSet]);
 
     useEffect(() => {
         const storedHigh = parseInt(localStorage.getItem("highScore"), 10);
         if (!Number.isNaN(storedHigh)) setHighScore(storedHigh);
     }, []);
 
+    const startGame = () => {
+        const chosen = includePit
+            ? [...defaultImages, ...pitOfMiseryImages]
+            : [...defaultImages];
+        setSelectedSetName(includePit ? "EToH + Pit of Misery" : "EToH");
+        // reset states for a fresh game
+        setImagesLoaded(false);
+        setShuffledImages([]);
+        setCurrentIndex(0);
+        setScore(0);
+        setGuess("");
+        setGameOver(false);
+        setLastCorrectAnswer(null);
+        setImageSet(chosen);
+    };
+
     const checkGuess = () => {
+        if (!shuffledImages.length) return;
         const normalized = guess.trim().toLowerCase();
         const validAnswers = shuffledImages[currentIndex].answers.map((a) =>
             a.toLowerCase()
@@ -107,11 +175,10 @@ export default function ImageGuessGame() {
             setScore(newScore);
             setGuess("");
 
-            // advance to next image, reshuffle if needed
             if (currentIndex + 1 < shuffledImages.length) {
-                setCurrentIndex(currentIndex + 1);
+                setCurrentIndex((i) => i + 1);
             } else {
-                setShuffledImages(shuffleArray(images));
+                setShuffledImages(shuffleArray(imageSet));
                 setCurrentIndex(0);
             }
         } else {
@@ -129,13 +196,59 @@ export default function ImageGuessGame() {
     };
 
     const restart = () => {
+        if (!imageSet) return;
         setScore(0);
         setGuess("");
         setGameOver(false);
-        setShuffledImages(shuffleArray(images));
+        setShuffledImages(shuffleArray(imageSet));
         setCurrentIndex(0);
         setLastCorrectAnswer(null);
     };
+
+    // Start screen with checkbox
+    if (!imageSet) {
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white p-4">
+                <Card className="w-full max-w-md mx-auto text-center p-6 bg-gray-800 rounded-2xl shadow-lg">
+                    <CardContent>
+                        <h1 className="text-xl font-bold mb-4">
+                            Guess the EToH Tower
+                        </h1>
+
+                        <label className="flex items-center mb-4">
+                            <div className="mr-4">
+                                <div className="font-semibold">
+                                    Include Pit of Misery
+                                </div>
+                                <div className="text-sm opacity-80 text-left">
+                                    {pitOfMiseryImages.length} towers
+                                </div>
+                            </div>
+                            <input
+                                type="checkbox"
+                                checked={includePit}
+                                onChange={(e) =>
+                                    setIncludePit(e.target.checked)
+                                }
+                                className="h-5 w-5"
+                                aria-label="Include Pit of Misery towers"
+                            />
+                        </label>
+
+                        <Button onClick={startGame} className="w-full mb-3">
+                            Start Game
+                        </Button>
+
+                        <div className="text-sm opacity-80">
+                            Tip: type the tower acronym (e.g.{" "}
+                            <span className="font-semibold">ToM</span>) or the
+                            full tower name.
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+        );
+    }
 
     if (!imagesLoaded) {
         return (
@@ -167,7 +280,7 @@ export default function ImageGuessGame() {
                                     e.key === "Enter" && checkGuess()
                                 }
                                 className="w-full p-2 mb-3 text-black rounded"
-                                placeholder="Type your guess and press Enter or Submit..."
+                                placeholder="Type your guess..."
                             />
 
                             <Button
@@ -197,8 +310,18 @@ export default function ImageGuessGame() {
                                     </span>
                                 </p>
                             )}
-                            <Button onClick={restart} className="w-full">
+                            <Button onClick={restart} className="w-full mb-3">
                                 Play Again
+                            </Button>
+                            <Button
+                                onClick={() => {
+                                    setImageSet(null);
+                                    setImagesLoaded(false);
+                                    // keep includePit as-is so user's preference remains
+                                }}
+                                className="w-full"
+                            >
+                                Back to Start
                             </Button>
                         </>
                     )}
