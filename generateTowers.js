@@ -43,7 +43,7 @@ const POM_IMAGES = [
     },
     {
         url: "/images/PoM/TotRP.jpg",
-        answers: ["ToTRP", "Tower of The Roof's Pique"],
+        answers: ["TotRP", "Tower of The Roof's Pique"],
     },
     {
         url: "/images/PoM/ToEV.jpg",
@@ -63,7 +63,7 @@ const POM_IMAGES = [
     },
     {
         url: "/images/PoM/WaT.jpg",
-        answers: ["WAT", "Was A Tower"],
+        answers: ["WaT", "Was A Tower"],
     },
     {
         url: "/images/PoM/CoIV.jpg",
