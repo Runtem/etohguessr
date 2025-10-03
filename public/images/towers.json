@@ -1,0 +1,2748 @@
+{
+  "defaultImages": [
+    {
+      "url": "/images/AA/SoAP.jpg",
+      "answers": [
+        "SoAP",
+        "Steeple of Atmospheric Powers"
+      ]
+    },
+    {
+      "url": "/images/AA/SoAS.jpg",
+      "answers": [
+        "SoAS",
+        "Steeple of Astounding Sorcery"
+      ]
+    },
+    {
+      "url": "/images/AA/SoBT.jpg",
+      "answers": [
+        "SoBT",
+        "Steeple of Biome Traversing"
+      ]
+    },
+    {
+      "url": "/images/AA/SoCA.jpg",
+      "answers": [
+        "SoCA",
+        "Steeple of Crystal Ascension"
+      ]
+    },
+    {
+      "url": "/images/AA/SoMC.jpg",
+      "answers": [
+        "SoMC",
+        "Steeple of Magical Collaborations"
+      ]
+    },
+    {
+      "url": "/images/AA/SoME.jpg",
+      "answers": [
+        "SoME",
+        "Steeple of Magical Elements"
+      ]
+    },
+    {
+      "url": "/images/AA/SoRO.jpg",
+      "answers": [
+        "SoRO",
+        "Steeple of Realm Odyssey"
+      ]
+    },
+    {
+      "url": "/images/AA/SoTC.jpg",
+      "answers": [
+        "SoTC",
+        "Steeple of Twisted Crystals"
+      ]
+    },
+    {
+      "url": "/images/AA/SoWC.jpg",
+      "answers": [
+        "SoWC",
+        "Steeple of Witch Calamity"
+      ]
+    },
+    {
+      "url": "/images/AA/ToIA.jpg",
+      "answers": [
+        "ToIA",
+        "Tower of Icy Adventures"
+      ]
+    },
+    {
+      "url": "/images/AT/ToCB.jpg",
+      "answers": [
+        "ToCB",
+        "Tower of Climactic Beats"
+      ]
+    },
+    {
+      "url": "/images/AT/ToCWC.jpg",
+      "answers": [
+        "ToCWC",
+        "Tower of Corner Wedge Climbing"
+      ]
+    },
+    {
+      "url": "/images/AT/ToFSF.jpg",
+      "answers": [
+        "ToFSF",
+        "Tower of Forever-Sleeping Flower"
+      ]
+    },
+    {
+      "url": "/images/AT/ToFZ.jpg",
+      "answers": [
+        "ToFZ",
+        "Tower of Fruity Zeal"
+      ]
+    },
+    {
+      "url": "/images/AT/ToLLL.jpg",
+      "answers": [
+        "ToLLL",
+        "Tower of Largely Limited Luminance"
+      ]
+    },
+    {
+      "url": "/images/AT/ToMD.jpg",
+      "answers": [
+        "ToMD",
+        "Tower of Mechanical Disarray"
+      ]
+    },
+    {
+      "url": "/images/AT/ToRH.jpg",
+      "answers": [
+        "ToRH",
+        "Tower of Rhythm Heaven"
+      ]
+    },
+    {
+      "url": "/images/AT/ToSR.jpg",
+      "answers": [
+        "ToSR",
+        "Tower of Shadowy Radiance"
+      ]
+    },
+    {
+      "url": "/images/AT/ToVT.jpg",
+      "answers": [
+        "ToVT",
+        "Tower of Viaduct Traversing"
+      ]
+    },
+    {
+      "url": "/images/AT/ToWF.jpg",
+      "answers": [
+        "ToWF",
+        "Tower of Wicked Fortress"
+      ]
+    },
+    {
+      "url": "/images/AT/ToWIA.jpg",
+      "answers": [
+        "ToWIA",
+        "Tower of Whisking It All"
+      ]
+    },
+    {
+      "url": "/images/AT/ToWMT.jpg",
+      "answers": [
+        "ToWMT",
+        "Tower of Wanting More Time"
+      ]
+    },
+    {
+      "url": "/images/AT/ToWoW.jpg",
+      "answers": [
+        "ToWoW",
+        "Tower of Whirl of Winds"
+      ]
+    },
+    {
+      "url": "/images/FR/CoWN.jpg",
+      "answers": [
+        "CoWN",
+        "Citadel of Weird Nostalgia"
+      ]
+    },
+    {
+      "url": "/images/FR/SoC.jpg",
+      "answers": [
+        "SoC",
+        "Steeple of Climbing"
+      ]
+    },
+    {
+      "url": "/images/FR/SoHP.jpg",
+      "answers": [
+        "SoHP",
+        "Steeple of Huge Pain"
+      ]
+    },
+    {
+      "url": "/images/FR/SoLW.jpg",
+      "answers": [
+        "SoLW",
+        "Steeple of Low Woe"
+      ]
+    },
+    {
+      "url": "/images/FR/SoMD.jpg",
+      "answers": [
+        "SoMD",
+        "Steeple of Meaningless Decisions"
+      ]
+    },
+    {
+      "url": "/images/FR/SoP.jpg",
+      "answers": [
+        "SoP",
+        "Steeple of Pursuit"
+      ]
+    },
+    {
+      "url": "/images/FR/SoTP.jpg",
+      "answers": [
+        "SoTP",
+        "Steeple of Towering Pillars"
+      ]
+    },
+    {
+      "url": "/images/FR/SoUR.jpg",
+      "answers": [
+        "SoUR",
+        "Steeple of Uninstalling Roblox"
+      ]
+    },
+    {
+      "url": "/images/FR/SoWP.jpg",
+      "answers": [
+        "SoWP",
+        "Steeple of Wall Punching"
+      ]
+    },
+    {
+      "url": "/images/FR/TIPAT.jpg",
+      "answers": [
+        "TIPAT",
+        "This Is Probably A Tower"
+      ]
+    },
+    {
+      "url": "/images/FR/ToDE.jpg",
+      "answers": [
+        "ToDE",
+        "Tower of Dangerous Expeditions"
+      ]
+    },
+    {
+      "url": "/images/FR/ToII.jpg",
+      "answers": [
+        "ToII",
+        "Tower of Immense Ire"
+      ]
+    },
+    {
+      "url": "/images/FR/ToIS.jpg",
+      "answers": [
+        "ToIS",
+        "Tower of Increasing Stress"
+      ]
+    },
+    {
+      "url": "/images/FR/ToJGF.jpg",
+      "answers": [
+        "ToJGF",
+        "Tower of Jolly Good Fun"
+      ]
+    },
+    {
+      "url": "/images/FR/ToMB.jpg",
+      "answers": [
+        "ToMB",
+        "Tower of Mind Breaking"
+      ]
+    },
+    {
+      "url": "/images/FR/ToTC.jpg",
+      "answers": [
+        "ToTC",
+        "Tower of Triangular Covering"
+      ]
+    },
+    {
+      "url": "/images/FR/ToV.jpg",
+      "answers": [
+        "ToV",
+        "Tower of Versatility"
+      ]
+    },
+    {
+      "url": "/images/GoE/NEAF.jpg",
+      "answers": [
+        "NEAF",
+        "Not Even A Flower"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoBA.jpg",
+      "answers": [
+        "SoBA",
+        "Steeple of Buoyant Automations"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoBJ.jpg",
+      "answers": [
+        "SoBJ",
+        "Steeple of Beginner's Journey"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoDS.jpg",
+      "answers": [
+        "SoDS",
+        "Steeple of Devil's Snare"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoFF.jpg",
+      "answers": [
+        "SoFF",
+        "Steeple of Feudal Foliage"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoFW.jpg",
+      "answers": [
+        "SoFW",
+        "Steeple of Flourishing Wastelands"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoGP.jpg",
+      "answers": [
+        "SoGP",
+        "Steeple of Greenhouse Placidity"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoIF.jpg",
+      "answers": [
+        "SoIF",
+        "Steeple of Infectious Foliage"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoLIQ.jpg",
+      "answers": [
+        "SoLIQ",
+        "Steeple of Lost in Quiescence"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoN.jpg",
+      "answers": [
+        "SoN",
+        "Steeple of Nightfall"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoO.jpg",
+      "answers": [
+        "SoO",
+        "Steeple of Overgrowth"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoOA.jpg",
+      "answers": [
+        "SoOA",
+        "Steeple of Overgrown Ascension"
+      ]
+    },
+    {
+      "url": "/images/GoE/SoVV.jpg",
+      "answers": [
+        "SoVV",
+        "Steeple of Various Vivariums"
+      ]
+    },
+    {
+      "url": "/images/GoE/ToPA.jpg",
+      "answers": [
+        "ToPA",
+        "Tower of Perilous Antipode"
+      ]
+    },
+    {
+      "url": "/images/LR/CoIS.jpg",
+      "answers": [
+        "CoIS",
+        "Citadel of Inside Situations"
+      ]
+    },
+    {
+      "url": "/images/LR/ToCS.jpg",
+      "answers": [
+        "ToCS",
+        "Tower of Compact Spaces"
+      ]
+    },
+    {
+      "url": "/images/LR/ToDL.jpg",
+      "answers": [
+        "ToDL",
+        "Tower of Diverging Layers"
+      ]
+    },
+    {
+      "url": "/images/LR/ToEW.jpg",
+      "answers": [
+        "ToEW",
+        "Tower of Excessive Weirdness"
+      ]
+    },
+    {
+      "url": "/images/LR/ToLOZ.jpg",
+      "answers": [
+        "ToLOZ",
+        "Tower of Losing Our Zeal"
+      ]
+    },
+    {
+      "url": "/images/LR/ToOO.jpg",
+      "answers": [
+        "ToOO",
+        "Tower of Odd Odyssey"
+      ]
+    },
+    {
+      "url": "/images/LR/ToTEM.jpg",
+      "answers": [
+        "ToTEM",
+        "Tower of Tallying Every Mistake"
+      ]
+    },
+    {
+      "url": "/images/LR/ToTJ.jpg",
+      "answers": [
+        "ToTJ",
+        "Tower of Triple Jeopardy"
+      ]
+    },
+    {
+      "url": "/images/LR/ToTST.jpg",
+      "answers": [
+        "ToTST",
+        "Tower of Two Sided Troubles"
+      ]
+    },
+    {
+      "url": "/images/LR/ToUH.jpg",
+      "answers": [
+        "ToUH",
+        "Tower of Unsettling Heights"
+      ]
+    },
+    {
+      "url": "/images/LR/ToWaW.jpg",
+      "answers": [
+        "ToWaW",
+        "Tower of Witchcraft and Wizardry"
+      ]
+    },
+    {
+      "url": "/images/PA/PAT.jpg",
+      "answers": [
+        "PAT",
+        "Possibly A Tower"
+      ]
+    },
+    {
+      "url": "/images/PA/SoAR.jpg",
+      "answers": [
+        "SoAR",
+        "Steeple of Aquatic Rallies"
+      ]
+    },
+    {
+      "url": "/images/PA/SoAU.jpg",
+      "answers": [
+        "SoAU",
+        "Steeple of Abyssal Upturn"
+      ]
+    },
+    {
+      "url": "/images/PA/SoCF.jpg",
+      "answers": [
+        "SoCF",
+        "Steeple of Cliffside Falls"
+      ]
+    },
+    {
+      "url": "/images/PA/SoDD.jpg",
+      "answers": [
+        "SoDD",
+        "Steeple of Dusty Dunes"
+      ]
+    },
+    {
+      "url": "/images/PA/SoDI.jpg",
+      "answers": [
+        "SoDI",
+        "Steeple of Desolate Isles"
+      ]
+    },
+    {
+      "url": "/images/PA/SoHS.jpg",
+      "answers": [
+        "SoHS",
+        "Steeple of Hallucinatory Spectacles"
+      ]
+    },
+    {
+      "url": "/images/PA/SoMM.jpg",
+      "answers": [
+        "SoMM",
+        "Steeple of Mystical Marine"
+      ]
+    },
+    {
+      "url": "/images/PA/SoSIS.jpg",
+      "answers": [
+        "SoSIS",
+        "Steeple of Sunny Island Shenanigans"
+      ]
+    },
+    {
+      "url": "/images/PA/SoUB.jpg",
+      "answers": [
+        "SoUB",
+        "Steeple of Underlying Breezes"
+      ]
+    },
+    {
+      "url": "/images/PA/SoUC.jpg",
+      "answers": [
+        "SoUC",
+        "Steeple of Upright Cliffs"
+      ]
+    },
+    {
+      "url": "/images/PA/SoUV.jpg",
+      "answers": [
+        "SoUV",
+        "Steeple of Undersea Voyage"
+      ]
+    },
+    {
+      "url": "/images/PA/SoW.jpg",
+      "answers": [
+        "SoW",
+        "Steeple of Waterfall"
+      ]
+    },
+    {
+      "url": "/images/PA/ToCI.jpg",
+      "answers": [
+        "ToCI",
+        "Tower of Cyclonic Isles"
+      ]
+    },
+    {
+      "url": "/images/PA/ToCIAD.jpg",
+      "answers": [
+        "ToCIAD",
+        "Tower of Call It A Day"
+      ]
+    },
+    {
+      "url": "/images/PA/ToHP.jpg",
+      "answers": [
+        "ToHP",
+        "Tower of High Power"
+      ]
+    },
+    {
+      "url": "/images/PA/ToTTT.jpg",
+      "answers": [
+        "ToTTT",
+        "Tower of Traversing The Tropics"
+      ]
+    },
+    {
+      "url": "/images/R1/CoLS.jpg",
+      "answers": [
+        "CoLS",
+        "Citadel of Laptop Splitting"
+      ]
+    },
+    {
+      "url": "/images/R1/NEAT.jpg",
+      "answers": [
+        "NEAT",
+        "Not Even A Tower"
+      ]
+    },
+    {
+      "url": "/images/R1/ToA.jpg",
+      "answers": [
+        "ToA",
+        "Tower of Anger"
+      ]
+    },
+    {
+      "url": "/images/R1/ToAST.jpg",
+      "answers": [
+        "ToAST",
+        "Tower of Annoyingly Simple Trials"
+      ]
+    },
+    {
+      "url": "/images/R1/ToH.jpg",
+      "answers": [
+        "ToH",
+        "Tower of Hecc"
+      ]
+    },
+    {
+      "url": "/images/R1/ToIE.jpg",
+      "answers": [
+        "ToIE",
+        "Tower of Impossible Expectations"
+      ]
+    },
+    {
+      "url": "/images/R1/ToK.jpg",
+      "answers": [
+        "ToK",
+        "Tower of Killjoys"
+      ]
+    },
+    {
+      "url": "/images/R1/ToKY.jpg",
+      "answers": [
+        "ToKY",
+        "Tower of Keyboard Yeeting"
+      ]
+    },
+    {
+      "url": "/images/R1/ToM.jpg",
+      "answers": [
+        "ToM",
+        "Tower of Madness"
+      ]
+    },
+    {
+      "url": "/images/R1/ToNI.jpg",
+      "answers": [
+        "ToNI",
+        "Tower of Noticeable Infuriation"
+      ]
+    },
+    {
+      "url": "/images/R1/ToR.jpg",
+      "answers": [
+        "ToR",
+        "Tower of Rage"
+      ]
+    },
+    {
+      "url": "/images/R1/ToS.jpg",
+      "answers": [
+        "ToS",
+        "Tower of Stress"
+      ]
+    },
+    {
+      "url": "/images/R1/ToSP.jpg",
+      "answers": [
+        "ToSP",
+        "Tower of Screen Punching"
+      ]
+    },
+    {
+      "url": "/images/R1/ToTS.jpg",
+      "answers": [
+        "ToTS",
+        "Tower of True Skill"
+      ]
+    },
+    {
+      "url": "/images/R1/TT.jpg",
+      "answers": [
+        "TT",
+        "Thanos Tower"
+      ]
+    },
+    {
+      "url": "/images/R2/CoWS.jpg",
+      "answers": [
+        "CoWS",
+        "Citadel of Wacky Strategy"
+      ]
+    },
+    {
+      "url": "/images/R2/MAT.jpg",
+      "answers": [
+        "MAT",
+        "Maybe A Tower"
+      ]
+    },
+    {
+      "url": "/images/R2/ToBH.jpg",
+      "answers": [
+        "ToBH",
+        "Tower of Big Hole"
+      ]
+    },
+    {
+      "url": "/images/R2/ToCH.jpg",
+      "answers": [
+        "ToCH",
+        "Tower of Cold Hands"
+      ]
+    },
+    {
+      "url": "/images/R2/ToDC.jpg",
+      "answers": [
+        "ToDC",
+        "Tower of Difficulty Chart"
+      ]
+    },
+    {
+      "url": "/images/R2/ToDD.jpg",
+      "answers": [
+        "ToDD",
+        "Tower of Deep Darkness"
+      ]
+    },
+    {
+      "url": "/images/R2/ToES.jpg",
+      "answers": [
+        "ToES",
+        "Tower of Eternal Suffering"
+      ]
+    },
+    {
+      "url": "/images/R2/ToFaF.jpg",
+      "answers": [
+        "ToFaF",
+        "Tower of Falling and Failing"
+      ]
+    },
+    {
+      "url": "/images/R2/ToOH.jpg",
+      "answers": [
+        "ToOH",
+        "Tower of Overcoming Hatred"
+      ]
+    },
+    {
+      "url": "/images/R2/ToPS.jpg",
+      "answers": [
+        "ToPS",
+        "Tower of Phone Snapping"
+      ]
+    },
+    {
+      "url": "/images/R2/ToSD.jpg",
+      "answers": [
+        "ToSD",
+        "Tower of Shattered Dreams"
+      ]
+    },
+    {
+      "url": "/images/R2/ToT.jpg",
+      "answers": [
+        "ToT",
+        "Tower of Traps"
+      ]
+    },
+    {
+      "url": "/images/R2/ToTF.jpg",
+      "answers": [
+        "ToTF",
+        "Tower of Table Flipping"
+      ]
+    },
+    {
+      "url": "/images/R3/CoHaD.jpg",
+      "answers": [
+        "CoHaD",
+        "Citadel of Heights and Depths"
+      ]
+    },
+    {
+      "url": "/images/R3/TAT.jpg",
+      "answers": [
+        "TAT",
+        "Totally A Tower"
+      ]
+    },
+    {
+      "url": "/images/R3/ToAT.jpg",
+      "answers": [
+        "ToAT",
+        "Tower of Ancient Trickery"
+      ]
+    },
+    {
+      "url": "/images/R3/ToC.jpg",
+      "answers": [
+        "ToC",
+        "Tower of Confusion"
+      ]
+    },
+    {
+      "url": "/images/R3/ToD.jpg",
+      "answers": [
+        "ToD",
+        "Tower of Despair"
+      ]
+    },
+    {
+      "url": "/images/R3/ToDS.jpg",
+      "answers": [
+        "ToDS",
+        "Tower of Deep Sighing"
+      ]
+    },
+    {
+      "url": "/images/R3/ToF.jpg",
+      "answers": [
+        "ToF",
+        "Tower of Fatness"
+      ]
+    },
+    {
+      "url": "/images/R3/ToFT.jpg",
+      "answers": [
+        "ToFT",
+        "Tower of Funny Thoughts"
+      ]
+    },
+    {
+      "url": "/images/R3/ToIC.jpg",
+      "answers": [
+        "ToIC",
+        "Tower of Inverted Colours"
+      ]
+    },
+    {
+      "url": "/images/R3/ToLD.jpg",
+      "answers": [
+        "ToLD",
+        "Tower of Lotsa Damage"
+      ]
+    },
+    {
+      "url": "/images/R3/ToSI.jpg",
+      "answers": [
+        "ToSI",
+        "Tower of Slight Inconvenience"
+      ]
+    },
+    {
+      "url": "/images/R3/ToWER.jpg",
+      "answers": [
+        "ToWER",
+        "Tower of Winning Every Run"
+      ]
+    },
+    {
+      "url": "/images/R3/ToWH.jpg",
+      "answers": [
+        "ToWH",
+        "Tower of Wall Hugging"
+      ]
+    },
+    {
+      "url": "/images/R4/CoU.jpg",
+      "answers": [
+        "CoU",
+        "Citadel of Uneasiness"
+      ]
+    },
+    {
+      "url": "/images/R4/ToCN.jpg",
+      "answers": [
+        "ToCN",
+        "Tower of Corrupted Nightmares"
+      ]
+    },
+    {
+      "url": "/images/R4/ToDaD.jpg",
+      "answers": [
+        "ToDaD",
+        "Tower of Dust and Decay"
+      ]
+    },
+    {
+      "url": "/images/R4/ToE.jpg",
+      "answers": [
+        "ToE",
+        "Tower of Elysium"
+      ]
+    },
+    {
+      "url": "/images/R4/ToGG.jpg",
+      "answers": [
+        "ToGG",
+        "Tower of Getting Gnomed"
+      ]
+    },
+    {
+      "url": "/images/R4/ToHF.jpg",
+      "answers": [
+        "ToHF",
+        "Tower of Holy Flip"
+      ]
+    },
+    {
+      "url": "/images/R4/ToI.jpg",
+      "answers": [
+        "ToI",
+        "Tower of Inception"
+      ]
+    },
+    {
+      "url": "/images/R4/ToL.jpg",
+      "answers": [
+        "ToL",
+        "Tower of Linonophobia"
+      ]
+    },
+    {
+      "url": "/images/R4/ToLL.jpg",
+      "answers": [
+        "ToLL",
+        "Tower of Leaning Ledges"
+      ]
+    },
+    {
+      "url": "/images/R4/ToNP.jpg",
+      "answers": [
+        "ToNP",
+        "Tower of Nonsensical Platforms"
+      ]
+    },
+    {
+      "url": "/images/R4/ToO.jpg",
+      "answers": [
+        "ToO",
+        "Tower of Oblivion"
+      ]
+    },
+    {
+      "url": "/images/R4/ToSH.jpg",
+      "answers": [
+        "ToSH",
+        "Tower of Spiralling Heights"
+      ]
+    },
+    {
+      "url": "/images/R4/ToTM.jpg",
+      "answers": [
+        "ToTM",
+        "Tower of Terrible Mondays"
+      ]
+    },
+    {
+      "url": "/images/R4/ToVS.jpg",
+      "answers": [
+        "ToVS",
+        "Tower of Vivid Sections"
+      ]
+    },
+    {
+      "url": "/images/R4/WBAT.jpg",
+      "answers": [
+        "WBAT",
+        "Will Be A Tower"
+      ]
+    },
+    {
+      "url": "/images/R5/CoCR.jpg",
+      "answers": [
+        "CoCR",
+        "Citadel of Contrasting Regions"
+      ]
+    },
+    {
+      "url": "/images/R5/LAT.jpg",
+      "answers": [
+        "LAT",
+        "Likely A Tower"
+      ]
+    },
+    {
+      "url": "/images/R5/ToDM.jpg",
+      "answers": [
+        "ToDM",
+        "Tower of Downward Mobility"
+      ]
+    },
+    {
+      "url": "/images/R5/ToEA.jpg",
+      "answers": [
+        "ToEA",
+        "Tower of Extraordinary Adventures"
+      ]
+    },
+    {
+      "url": "/images/R5/ToFF.jpg",
+      "answers": [
+        "ToFF",
+        "Tower of Floral Fury"
+      ]
+    },
+    {
+      "url": "/images/R5/ToFN.jpg",
+      "answers": [
+        "ToFN",
+        "Tower of Frightening Nightmares"
+      ]
+    },
+    {
+      "url": "/images/R5/ToFO.jpg",
+      "answers": [
+        "ToFO",
+        "Tower of Fractured Obstacles"
+      ]
+    },
+    {
+      "url": "/images/R5/ToGaH.jpg",
+      "answers": [
+        "ToGaH",
+        "Tower of Glitching and Healing"
+      ]
+    },
+    {
+      "url": "/images/R5/ToIB.jpg",
+      "answers": [
+        "ToIB",
+        "Tower of Icy Blizzards"
+      ]
+    },
+    {
+      "url": "/images/R5/ToNV.jpg",
+      "answers": [
+        "ToNV",
+        "Tower of Nice Views"
+      ]
+    },
+    {
+      "url": "/images/R5/ToOC.jpg",
+      "answers": [
+        "ToOC",
+        "Tower of Obvious Chaos"
+      ]
+    },
+    {
+      "url": "/images/R5/ToRS.jpg",
+      "answers": [
+        "ToRS",
+        "Tower of Rigid Success"
+      ]
+    },
+    {
+      "url": "/images/R5/ToTH.jpg",
+      "answers": [
+        "ToTH",
+        "Tower of Tokyo Heights"
+      ]
+    },
+    {
+      "url": "/images/R5/ToTR.jpg",
+      "answers": [
+        "ToTR",
+        "Tower of Trivial Resentment"
+      ]
+    },
+    {
+      "url": "/images/R6/CoSR.jpg",
+      "answers": [
+        "CoSR",
+        "Citadel of Scythe Recognition"
+      ]
+    },
+    {
+      "url": "/images/R6/FNAT.jpg",
+      "answers": [
+        "FNAT",
+        "Fortunately Not A Tower"
+      ]
+    },
+    {
+      "url": "/images/R6/ToADF.jpg",
+      "answers": [
+        "ToADF",
+        "Tower of A Depressing Future"
+      ]
+    },
+    {
+      "url": "/images/R6/ToDR.jpg",
+      "answers": [
+        "ToDR",
+        "Tower of Dispersed Rooms"
+      ]
+    },
+    {
+      "url": "/images/R6/ToEP.jpg",
+      "answers": [
+        "ToEP",
+        "Tower of Environmental Pain"
+      ]
+    },
+    {
+      "url": "/images/R6/ToFJ.jpg",
+      "answers": [
+        "ToFJ",
+        "Tower of Friendly Jumps"
+      ]
+    },
+    {
+      "url": "/images/R6/ToFS.jpg",
+      "answers": [
+        "ToFS",
+        "Tower of Flustering Sections"
+      ]
+    },
+    {
+      "url": "/images/R6/ToIM.jpg",
+      "answers": [
+        "ToIM",
+        "Tower of Impossible Movement"
+      ]
+    },
+    {
+      "url": "/images/R6/ToISC.jpg",
+      "answers": [
+        "ToISC",
+        "Tower of Intense Solar Chaos"
+      ]
+    },
+    {
+      "url": "/images/R6/ToN.jpg",
+      "answers": [
+        "ToN",
+        "Tower of Niflheim"
+      ]
+    },
+    {
+      "url": "/images/R6/ToRR.jpg",
+      "answers": [
+        "ToRR",
+        "Tower of Radiant Realms"
+      ]
+    },
+    {
+      "url": "/images/R6/ToSM.jpg",
+      "answers": [
+        "ToSM",
+        "Tower of Strategic Mechanics"
+      ]
+    },
+    {
+      "url": "/images/R6/ToTI.jpg",
+      "answers": [
+        "ToTI",
+        "Tower of Twisted Inquisition"
+      ]
+    },
+    {
+      "url": "/images/R7/CoTE.jpg",
+      "answers": [
+        "CoTE",
+        "Citadel of True Exasperation"
+      ]
+    },
+    {
+      "url": "/images/R7/FFAST.jpg",
+      "answers": [
+        "FFAST",
+        "Far From A Surprising Tower"
+      ]
+    },
+    {
+      "url": "/images/R7/ToCC.jpg",
+      "answers": [
+        "ToCC",
+        "Tower of Collective Collaboration"
+      ]
+    },
+    {
+      "url": "/images/R7/ToDA.jpg",
+      "answers": [
+        "ToDA",
+        "Tower of Distorted Aerodynamics"
+      ]
+    },
+    {
+      "url": "/images/R7/ToEH.jpg",
+      "answers": [
+        "ToEH",
+        "Tower of Extreme Hell"
+      ]
+    },
+    {
+      "url": "/images/R7/ToER.jpg",
+      "answers": [
+        "ToER",
+        "Tower of Elongated Runs"
+      ]
+    },
+    {
+      "url": "/images/R7/ToFL.jpg",
+      "answers": [
+        "ToFL",
+        "Tower of Feeling Lazy"
+      ]
+    },
+    {
+      "url": "/images/R7/ToNED.jpg",
+      "answers": [
+        "ToNED",
+        "Tower of Never Ending Dizziness"
+      ]
+    },
+    {
+      "url": "/images/R7/ToNGUE.jpg",
+      "answers": [
+        "ToNGUE",
+        "Tower of Never Giving Up, Ever"
+      ]
+    },
+    {
+      "url": "/images/R7/ToOOO.jpg",
+      "answers": [
+        "ToOOO",
+        "Tower of Orientating Oscillating Opinions"
+      ]
+    },
+    {
+      "url": "/images/R7/ToRB.jpg",
+      "answers": [
+        "ToRB",
+        "Tower of Rushed Building"
+      ]
+    },
+    {
+      "url": "/images/R7/ToTB.jpg",
+      "answers": [
+        "ToTB",
+        "Tower of Terrifying Beauty"
+      ]
+    },
+    {
+      "url": "/images/R7/ToU.jpg",
+      "answers": [
+        "ToU",
+        "Tower of Ultraviolet"
+      ]
+    },
+    {
+      "url": "/images/R7/ToYV.jpg",
+      "answers": [
+        "ToYV",
+        "Tower of Yearning Victory"
+      ]
+    },
+    {
+      "url": "/images/R8/CoCHS.jpg",
+      "answers": [
+        "CoCHS",
+        "Citadel of Constant Heart Stopping"
+      ]
+    },
+    {
+      "url": "/images/R8/ToAA.jpg",
+      "answers": [
+        "ToAA",
+        "Tower of Aamos' Anger"
+      ]
+    },
+    {
+      "url": "/images/R8/ToEI.jpg",
+      "answers": [
+        "ToEI",
+        "Tower of Externalizing Insanity"
+      ]
+    },
+    {
+      "url": "/images/R8/ToGF.jpg",
+      "answers": [
+        "ToGF",
+        "Tower of Generation Failure"
+      ]
+    },
+    {
+      "url": "/images/R8/ToIII.jpg",
+      "answers": [
+        "ToIII",
+        "Tower of Insanely Innovative Ideas"
+      ]
+    },
+    {
+      "url": "/images/R8/ToMT.jpg",
+      "answers": [
+        "ToMT",
+        "Tower of Mean Tasks"
+      ]
+    },
+    {
+      "url": "/images/R8/ToNBA.jpg",
+      "answers": [
+        "ToNBA",
+        "Tower of Needing Basic Aptitude"
+      ]
+    },
+    {
+      "url": "/images/R8/ToSO.jpg",
+      "answers": [
+        "ToSO",
+        "Tower of Suffering Outside"
+      ]
+    },
+    {
+      "url": "/images/R8/ToSSS.jpg",
+      "answers": [
+        "ToSSS",
+        "Tower of Somewhat Simple Scaling"
+      ]
+    },
+    {
+      "url": "/images/R8/ToUS.jpg",
+      "answers": [
+        "ToUS",
+        "Tower of Uneasy Scaling"
+      ]
+    },
+    {
+      "url": "/images/R8/ToVA.jpg",
+      "answers": [
+        "ToVA",
+        "Tower of Vibrant Adventures"
+      ]
+    },
+    {
+      "url": "/images/R8/ToVE.jpg",
+      "answers": [
+        "ToVE",
+        "Tower of Verdant Entropy"
+      ]
+    },
+    {
+      "url": "/images/R8/ToVF.jpg",
+      "answers": [
+        "ToVF",
+        "Tower of Voluminous Framework"
+      ]
+    },
+    {
+      "url": "/images/R9/CoL.jpg",
+      "answers": [
+        "CoL",
+        "Citadel of Lethargy"
+      ]
+    },
+    {
+      "url": "/images/R9/ToAM.jpg",
+      "answers": [
+        "ToAM",
+        "Tower of Augmented Misery"
+      ]
+    },
+    {
+      "url": "/images/R9/ToBBB.jpg",
+      "answers": [
+        "ToBBB",
+        "Tower of Beat Block Berserk"
+      ]
+    },
+    {
+      "url": "/images/R9/ToBK.jpg",
+      "answers": [
+        "ToBK",
+        "Tower of Bloodthirsty Kenos"
+      ]
+    },
+    {
+      "url": "/images/R9/ToBT.jpg",
+      "answers": [
+        "ToBT",
+        "Tower of Bent Trauma"
+      ]
+    },
+    {
+      "url": "/images/R9/ToCA.jpg",
+      "answers": [
+        "ToCA",
+        "Tower of Curved Ascent"
+      ]
+    },
+    {
+      "url": "/images/R9/ToCP.jpg",
+      "answers": [
+        "ToCP",
+        "Tower of Cruel Punishment"
+      ]
+    },
+    {
+      "url": "/images/R9/ToCR.jpg",
+      "answers": [
+        "ToCR",
+        "Tower of Champion's Road"
+      ]
+    },
+    {
+      "url": "/images/R9/ToFaCT.jpg",
+      "answers": [
+        "ToFaCT",
+        "Tower of Frightening and Confusing Trials"
+      ]
+    },
+    {
+      "url": "/images/R9/ToGO.jpg",
+      "answers": [
+        "ToGO",
+        "Tower of Great Overcomings"
+      ]
+    },
+    {
+      "url": "/images/R9/ToHA.jpg",
+      "answers": [
+        "ToHA",
+        "Tower of High Adrenaline"
+      ]
+    },
+    {
+      "url": "/images/R9/ToJE.jpg",
+      "answers": [
+        "ToJE",
+        "Tower of Journey's End"
+      ]
+    },
+    {
+      "url": "/images/R9/ToNS.jpg",
+      "answers": [
+        "ToNS",
+        "Tower of Nervous Sweating"
+      ]
+    },
+    {
+      "url": "/images/R9/ToPP.jpg",
+      "answers": [
+        "ToPP",
+        "Tower of Pastel Pillars"
+      ]
+    },
+    {
+      "url": "/images/R9/ToQT.jpg",
+      "answers": [
+        "ToQT",
+        "Tower of Questionable Trials"
+      ]
+    },
+    {
+      "url": "/images/SA/SoD.jpg",
+      "answers": [
+        "SoD",
+        "Steeple of Descendance"
+      ]
+    },
+    {
+      "url": "/images/SA/SoGL.jpg",
+      "answers": [
+        "SoGL",
+        "Steeple of Guiding Lights"
+      ]
+    },
+    {
+      "url": "/images/SA/SoII.jpg",
+      "answers": [
+        "SoII",
+        "Steeple of Involuntary Isolation"
+      ]
+    },
+    {
+      "url": "/images/SA/SoMA.jpg",
+      "answers": [
+        "SoMA",
+        "Steeple of Midnight Acropolis"
+      ]
+    },
+    {
+      "url": "/images/SA/SoMB.jpg",
+      "answers": [
+        "SoMB",
+        "Steeple of Malignant Bright"
+      ]
+    },
+    {
+      "url": "/images/SA/SoRA.jpg",
+      "answers": [
+        "SoRA",
+        "Steeple of Ruinous Abate"
+      ]
+    },
+    {
+      "url": "/images/SA/SoRIS.jpg",
+      "answers": [
+        "SoRIS",
+        "Steeple of Resort In Stasis"
+      ]
+    },
+    {
+      "url": "/images/SA/SoWG.jpg",
+      "answers": [
+        "SoWG",
+        "Steeple of Wicked Grotto"
+      ]
+    },
+    {
+      "url": "/images/SA/SoXA.jpg",
+      "answers": [
+        "SoXA",
+        "Steeple of Xenial Abyss"
+      ]
+    },
+    {
+      "url": "/images/SA/ToAI.jpg",
+      "answers": [
+        "ToAI",
+        "Tower of Ancestral Interference"
+      ]
+    },
+    {
+      "url": "/images/SA/ToSW.jpg",
+      "answers": [
+        "ToSW",
+        "Tower of Shallow Waters"
+      ]
+    },
+    {
+      "url": "/images/SA/ToTD.jpg",
+      "answers": [
+        "ToTD",
+        "Tower of Tenebrous Depths"
+      ]
+    },
+    {
+      "url": "/images/SA/ToTINT.jpg",
+      "answers": [
+        "ToTINT",
+        "Tower of There Is No Tower"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoALD.jpg",
+      "answers": [
+        "SoALD",
+        "Steeple of After-Life Detention"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoBC.jpg",
+      "answers": [
+        "SoBC",
+        "Steeple of Balloon Commune"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoCV.jpg",
+      "answers": [
+        "SoCV",
+        "Steeple of Cheesy Vengeance"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoFB.jpg",
+      "answers": [
+        "SoFB",
+        "Steeple of Forlorn Blizzard"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoIB.jpg",
+      "answers": [
+        "SoIB",
+        "Steeple of Itsy Bitsy"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoTMM.jpg",
+      "answers": [
+        "SoTMM",
+        "Steeple of The Manufactured Monstrosity"
+      ]
+    },
+    {
+      "url": "/images/TSA/SoTMN.jpg",
+      "answers": [
+        "SoTMN",
+        "Steeple of Two Minute Noodles"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToADE.jpg",
+      "answers": [
+        "ToADE",
+        "Tower of A Disillusioned Existence"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToFFEE.jpg",
+      "answers": [
+        "ToFFEE",
+        "Tower of Fleeing From Everything Ending"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToHWH.jpg",
+      "answers": [
+        "ToHWH",
+        "Tower of House Without Home"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToIR.jpg",
+      "answers": [
+        "ToIR",
+        "Tower of Inflated Ruins"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToLR.jpg",
+      "answers": [
+        "ToLR",
+        "Tower of Lethean Recollection"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToPLA.jpg",
+      "answers": [
+        "ToPLA",
+        "Tower of Pursuit Led Astray"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToTUTU.jpg",
+      "answers": [
+        "ToTUTU",
+        "Tower of The Umbrella, The User"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToWR.jpg",
+      "answers": [
+        "ToWR",
+        "Tower of Warranted Retribution"
+      ]
+    },
+    {
+      "url": "/images/TSA/ToYLFW.jpg",
+      "answers": [
+        "ToYLFW",
+        "Tower of You're Late For Work"
+      ]
+    },
+    {
+      "url": "/images/Z1/CoP.jpg",
+      "answers": [
+        "CoP",
+        "Citadel of Peril"
+      ]
+    },
+    {
+      "url": "/images/Z1/SAT.jpg",
+      "answers": [
+        "SAT",
+        "Somewhat A Tower"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToAD.jpg",
+      "answers": [
+        "ToAD",
+        "Tower of Atlantic Depths"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToAV.jpg",
+      "answers": [
+        "ToAV",
+        "Tower of Absolute Vexation"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToCO.jpg",
+      "answers": [
+        "ToCO",
+        "Tower of Contractual Obligations"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToED.jpg",
+      "answers": [
+        "ToED",
+        "Tower of Extreme Dystopia"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToHS.jpg",
+      "answers": [
+        "ToHS",
+        "Tower of Hands Sweating"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToMH.jpg",
+      "answers": [
+        "ToMH",
+        "Tower of Mirrored Hecc"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToP.jpg",
+      "answers": [
+        "ToP",
+        "Tower of Peace"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToPHaT.jpg",
+      "answers": [
+        "ToPHaT",
+        "Tower of Peaceful Happiness and Tranquility"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToRNI.jpg",
+      "answers": [
+        "ToRNI",
+        "Tower of Really Nasty Ideas"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToTL.jpg",
+      "answers": [
+        "ToTL",
+        "Tower of Thinning Layers"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToUT.jpg",
+      "answers": [
+        "ToUT",
+        "Tower of Ultimately Terrifying"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToWEL.jpg",
+      "answers": [
+        "ToWEL",
+        "Tower of Wanting Extra Levels"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToYS.jpg",
+      "answers": [
+        "ToYS",
+        "Tower of Yearning Success"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToZ.jpg",
+      "answers": [
+        "ToZ",
+        "Tower of Zespluz"
+      ]
+    },
+    {
+      "url": "/images/Z1/ToZD.jpg",
+      "answers": [
+        "ToZD",
+        "Tower of Zero Disturbances"
+      ]
+    },
+    {
+      "url": "/images/Z10/CoOTWI.jpg",
+      "answers": [
+        "CoOTWI",
+        "Tower of Overcoming The World's Imperfections"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToBP.jpg",
+      "answers": [
+        "ToBP",
+        "Tower of Blast Power"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToCaV.jpg",
+      "answers": [
+        "ToCaV",
+        "Tower of Complexity and Volatility"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToCZ.jpg",
+      "answers": [
+        "ToCZ",
+        "Tower of Clandestine Zones"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToETU.jpg",
+      "answers": [
+        "ToETU",
+        "Tower of Expecting The Unexpected"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToIT.jpg",
+      "answers": [
+        "ToIT",
+        "Tower of Interstellar Terrarium"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToMN.jpg",
+      "answers": [
+        "ToMN",
+        "Tower of Mach Nine"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToOTTF.jpg",
+      "answers": [
+        "ToOTTF",
+        "Tower of One Two Three Four"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToPI.jpg",
+      "answers": [
+        "ToPI",
+        "Tower of Prismatic Instability"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToPL.jpg",
+      "answers": [
+        "ToPL",
+        "Tower of Power Laws"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToRL.jpg",
+      "answers": [
+        "ToRL",
+        "Tower of Resonant Landscapes"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToRoMW.jpg",
+      "answers": [
+        "ToRoMW",
+        "Tower of Rain on My World"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToRT.jpg",
+      "answers": [
+        "ToRT",
+        "Tower of Raging Tempest"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToTDF.jpg",
+      "answers": [
+        "ToTDF",
+        "Tower of The Despondent Fortress"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToTHT.jpg",
+      "answers": [
+        "ToTHT",
+        "Tower of Tee Hee Time"
+      ]
+    },
+    {
+      "url": "/images/Z10/ToVV.jpg",
+      "answers": [
+        "ToVV",
+        "Tower of Valiant Verges"
+      ]
+    },
+    {
+      "url": "/images/Z2/CoGS.jpg",
+      "answers": [
+        "CoGS",
+        "Citadel of Green Stuff"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToAZ.jpg",
+      "answers": [
+        "ToAZ",
+        "Tower of Arcanium Zenturing"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToCM.jpg",
+      "answers": [
+        "ToCM",
+        "Tower of Chaotic Moments"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToDaC.jpg",
+      "answers": [
+        "ToDaC",
+        "Tower of Dreams and Caverns"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToDT.jpg",
+      "answers": [
+        "ToDT",
+        "Tower of Double Trouble"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToEE.jpg",
+      "answers": [
+        "ToEE",
+        "Tower of Extraterrestial Enchantment"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToGD.jpg",
+      "answers": [
+        "ToGD",
+        "Tower of Great Displeasure"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToGLA.jpg",
+      "answers": [
+        "ToGLA",
+        "Tower of Ground Level Ascension"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToPF.jpg",
+      "answers": [
+        "ToPF",
+        "Tower of Pleasant Fantasies"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToSA.jpg",
+      "answers": [
+        "ToSA",
+        "Tower of Slanted Anticipation"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToSaS.jpg",
+      "answers": [
+        "ToSaS",
+        "Tower of Slipping and Sliding"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToTA.jpg",
+      "answers": [
+        "ToTA",
+        "Tower of Troublesome Adventures"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToTT.jpg",
+      "answers": [
+        "ToTT",
+        "Tower of Triangular Terror"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToUD.jpg",
+      "answers": [
+        "ToUD",
+        "Tower of Unearthed Discoveries"
+      ]
+    },
+    {
+      "url": "/images/Z2/ToVR.jpg",
+      "answers": [
+        "ToVR",
+        "Tower of Venomous Resonance"
+      ]
+    },
+    {
+      "url": "/images/Z3/CoTS.jpg",
+      "answers": [
+        "CoTS",
+        "Citadel of Tricky Situations"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToBB.jpg",
+      "answers": [
+        "ToBB",
+        "Tower of Broken Bricks"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToCaS.jpg",
+      "answers": [
+        "ToCaS",
+        "Tower of Cogs and Steam"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToCaUP.jpg",
+      "answers": [
+        "ToCaUP",
+        "Tower of Cruel and Unusual Punishment"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToCCC.jpg",
+      "answers": [
+        "ToCCC",
+        "Tower of Cracked, Crushed Cubes"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToCOF.jpg",
+      "answers": [
+        "ToCOF",
+        "Tower of Client Object Frenzy"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToDH.jpg",
+      "answers": [
+        "ToDH",
+        "Tower of Dimensional Hopping"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToHH.jpg",
+      "answers": [
+        "ToHH",
+        "Tower of Hopeless Hell"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToIO.jpg",
+      "answers": [
+        "ToIO",
+        "Tower of Infuriating Obstacles"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToMA.jpg",
+      "answers": [
+        "ToMA",
+        "Tower of Mild Agitation"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToMC.jpg",
+      "answers": [
+        "ToMC",
+        "Tower of Menacing Creations"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToOD.jpg",
+      "answers": [
+        "ToOD",
+        "Tower of Overestimating Difficulty"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToQC.jpg",
+      "answers": [
+        "ToQC",
+        "Tower of Quirky Contraptions"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToRCH.jpg",
+      "answers": [
+        "ToRCH",
+        "Tower of Requiring Critical Help"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToSFU.jpg",
+      "answers": [
+        "ToSFU",
+        "Tower of Six Feet Under"
+      ]
+    },
+    {
+      "url": "/images/Z3/ToX.jpg",
+      "answers": [
+        "ToX",
+        "Tower of Xanthophobia"
+      ]
+    },
+    {
+      "url": "/images/Z4/CoQ.jpg",
+      "answers": [
+        "CoQ",
+        "Citadel of Quadrilaterals"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToAAA.jpg",
+      "answers": [
+        "ToAAA",
+        "Tower of Astronomically Aimless Annoyances"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToAC.jpg",
+      "answers": [
+        "ToAC",
+        "Tower of Aquatic Contemplation"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToDDD.jpg",
+      "answers": [
+        "ToDDD",
+        "Tower of Dance Dance Destruction"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToET.jpg",
+      "answers": [
+        "ToET",
+        "Tower of Elevator Travelling"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToFaST.jpg",
+      "answers": [
+        "ToFaST",
+        "Tower of Fun and Simple Trials"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToFG.jpg",
+      "answers": [
+        "ToFG",
+        "Tower of Funky Grooves"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToFSC.jpg",
+      "answers": [
+        "ToFSC",
+        "Tower of Fairly Simple Challenges"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToIF.jpg",
+      "answers": [
+        "ToIF",
+        "Tower of Inevitable Failure"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToMIM.jpg",
+      "answers": [
+        "ToMIM",
+        "Tower of Mechanically Induced Mayhem"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToPC.jpg",
+      "answers": [
+        "ToPC",
+        "Tower of Pure Chroma"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToSS.jpg",
+      "answers": [
+        "ToSS",
+        "Tower of Shifting Slopes"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToTV.jpg",
+      "answers": [
+        "ToTV",
+        "Tower of Tornado Vehemence"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToUID.jpg",
+      "answers": [
+        "ToUID",
+        "Tower of Up Is Down"
+      ]
+    },
+    {
+      "url": "/images/Z4/ToWW.jpg",
+      "answers": [
+        "ToWW",
+        "Tower of Wicked Wedges"
+      ]
+    },
+    {
+      "url": "/images/Z5/CoCE.jpg",
+      "answers": [
+        "CoCE",
+        "Citadel of Corporate Enterprise"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToAO.jpg",
+      "answers": [
+        "ToAO",
+        "Tower of Anticlimactic Outcomes"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToAR.jpg",
+      "answers": [
+        "ToAR",
+        "Tower of Alien Radiance"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToBaBT.jpg",
+      "answers": [
+        "ToBaBT",
+        "Tower of Brutal and Bizarre Torment"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToBS.jpg",
+      "answers": [
+        "ToBS",
+        "Tower of Bright Serenity"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToFV.jpg",
+      "answers": [
+        "ToFV",
+        "Tower of Fractal Volution"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToGT.jpg",
+      "answers": [
+        "ToGT",
+        "Tower of Guided Trials"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToHE.jpg",
+      "answers": [
+        "ToHE",
+        "Tower of Horrifying Experiences"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToHK.jpg",
+      "answers": [
+        "ToHK",
+        "Tower of Heiwana Kaze"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToPZ.jpg",
+      "answers": [
+        "ToPZ",
+        "Tower of Polychromatic Zero"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToSSSS.jpg",
+      "answers": [
+        "ToSSSS",
+        "Tower of Super Stupid Security Systems"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToST.jpg",
+      "answers": [
+        "ToST",
+        "Tower of Sovereign Traveling"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToSTS.jpg",
+      "answers": [
+        "ToSTS",
+        "Tower of Stairs To Spare"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToUE.jpg",
+      "answers": [
+        "ToUE",
+        "Tower of Unhealthy Escalation"
+      ]
+    },
+    {
+      "url": "/images/Z5/ToZA.jpg",
+      "answers": [
+        "ToZA",
+        "Tower of Zany Architecture"
+      ]
+    },
+    {
+      "url": "/images/Z6/CoTaW.jpg",
+      "answers": [
+        "CoTaW",
+        "Citadel of Twists and Weirdness"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToAF.jpg",
+      "answers": [
+        "ToAF",
+        "Tower of Astral Fusion"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToAS.jpg",
+      "answers": [
+        "ToAS",
+        "Tower of Angled Scenery"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToBC.jpg",
+      "answers": [
+        "ToBC",
+        "Tower of Brief Challenges"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToBIBI.jpg",
+      "answers": [
+        "ToBIBI",
+        "Tower of Break It, Buy It"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToCF.jpg",
+      "answers": [
+        "ToCF",
+        "Tower of Conflicting Frontiers"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToFD.jpg",
+      "answers": [
+        "ToFD",
+        "Tower of Foreign Domains"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToHL.jpg",
+      "answers": [
+        "ToHL",
+        "Tower of Hazardous Laddering"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToHM.jpg",
+      "answers": [
+        "ToHM",
+        "Tower of Hefty Magnitude"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToMM.jpg",
+      "answers": [
+        "ToMM",
+        "Tower of Micro Management"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToMO.jpg",
+      "answers": [
+        "ToMO",
+        "Tower of Massive Overheating"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToRC.jpg",
+      "answers": [
+        "ToRC",
+        "Tower of Rock Climbing"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToTDA.jpg",
+      "answers": [
+        "ToTDA",
+        "Tower of The Dripping Amalgam"
+      ]
+    },
+    {
+      "url": "/images/Z6/ToW.jpg",
+      "answers": [
+        "ToW",
+        "Tower of Watts"
+      ]
+    },
+    {
+      "url": "/images/Z7/CoACT.jpg",
+      "answers": [
+        "CoACT",
+        "Tower of A Cruel Tale"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToBR.jpg",
+      "answers": [
+        "ToBR",
+        "Tower of Bygone Relic"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToCE.jpg",
+      "answers": [
+        "ToCE",
+        "Tower of Cylindrical Extensions"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToCMC.jpg",
+      "answers": [
+        "ToCMC",
+        "Tower of Cone Mesh Climbing"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToDF.jpg",
+      "answers": [
+        "ToDF",
+        "Tower of Destructive Fever"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToFM.jpg",
+      "answers": [
+        "ToFM",
+        "Tower of Fractured Memories"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToGM.jpg",
+      "answers": [
+        "ToGM",
+        "Tower of Growing Madness"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToJ.jpg",
+      "answers": [
+        "ToJ",
+        "Tower of Jazz"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToRW.jpg",
+      "answers": [
+        "ToRW",
+        "Tower of Rough Waters"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToSaPS.jpg",
+      "answers": [
+        "ToSaPS",
+        "Tower of Swift and Precise Sections"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToSV.jpg",
+      "answers": [
+        "ToSV",
+        "Tower of Sweet Victory"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToUA.jpg",
+      "answers": [
+        "ToUA",
+        "Tower of Uncanny Agony"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToUI.jpg",
+      "answers": [
+        "ToUI",
+        "Tower of Uncontrollable Ire"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToWS.jpg",
+      "answers": [
+        "ToWS",
+        "Tower of White Space"
+      ]
+    },
+    {
+      "url": "/images/Z7/ToY.jpg",
+      "answers": [
+        "ToY",
+        "Tower of Yore"
+      ]
+    },
+    {
+      "url": "/images/Z8/CoPE.jpg",
+      "answers": [
+        "CoPE",
+        "Citadel of Pyramid Escapades"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToAE.jpg",
+      "answers": [
+        "ToAE",
+        "Tower of Astral Eclipse"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToATD.jpg",
+      "answers": [
+        "ToATD",
+        "Tower of A Tetromino Disaster"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToCT.jpg",
+      "answers": [
+        "ToCT",
+        "Tower of Cosmic Tides"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToDIE.jpg",
+      "answers": [
+        "ToDIE",
+        "Tower of Descent Into Exile"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToFR.jpg",
+      "answers": [
+        "ToFR",
+        "Tower of Flame Restoration"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToGV.jpg",
+      "answers": [
+        "ToGV",
+        "Tower of Galactic Voyage"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToMIT.jpg",
+      "answers": [
+        "ToMIT",
+        "Tower of Melons In Time"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToML.jpg",
+      "answers": [
+        "ToML",
+        "Tower of Manic Lows"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToNEF.jpg",
+      "answers": [
+        "ToNEF",
+        "Tower of Never Ending Fun"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToNR.jpg",
+      "answers": [
+        "ToNR",
+        "Tower of No Return"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToON.jpg",
+      "answers": [
+        "ToON",
+        "Tower of One Nine"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToOV.jpg",
+      "answers": [
+        "ToOV",
+        "Tower of Overbearing Vertigo"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToRER.jpg",
+      "answers": [
+        "ToRER",
+        "Tower of Rough Endoplasmic Reticulum"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToTaSM.jpg",
+      "answers": [
+        "ToTaSM",
+        "Tower of Time and Space Manipulation"
+      ]
+    },
+    {
+      "url": "/images/Z8/ToXM.jpg",
+      "answers": [
+        "ToXM",
+        "Tower of X Madness"
+      ]
+    },
+    {
+      "url": "/images/Z9/CoIC.jpg",
+      "answers": [
+        "CoIC",
+        "Citadel of Increasing Claustrophobia"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToABCD.jpg",
+      "answers": [
+        "ToABCD",
+        "Tower of Arrantly Bodeful Cavern Depths"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToBBBB.jpg",
+      "answers": [
+        "ToBBBB",
+        "Tower of Big Blocky Beefy Buttons"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToBL.jpg",
+      "answers": [
+        "ToBL",
+        "Tower of Bonus Level"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToDTD.jpg",
+      "answers": [
+        "ToDTD",
+        "Tower of Dusk To Dawn"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToEC.jpg",
+      "answers": [
+        "ToEC",
+        "Tower of Eye Candy"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToEMP.jpg",
+      "answers": [
+        "ToEMP",
+        "Tower of Empty Meaningless Patterns"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToFCB.jpg",
+      "answers": [
+        "ToFCB",
+        "Tower of Furious Chicken Brawl"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToFU.jpg",
+      "answers": [
+        "ToFU",
+        "Tower of Falling Up"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToHR.jpg",
+      "answers": [
+        "ToHR",
+        "Tower of Hollow Reformations"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToLS.jpg",
+      "answers": [
+        "ToLS",
+        "Tower of Latest Sensation"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToMF.jpg",
+      "answers": [
+        "ToMF",
+        "Tower of Minus Facility"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToNN.jpg",
+      "answers": [
+        "ToNN",
+        "Tower of Nothing New"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToPB.jpg",
+      "answers": [
+        "ToPB",
+        "Tower of Panelling Barricades"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToSRD.jpg",
+      "answers": [
+        "ToSRD",
+        "Tower of Sugar Rush Deluxe"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToVITE.jpg",
+      "answers": [
+        "ToVITE",
+        "Tower of Voyaging Into The Earth"
+      ]
+    },
+    {
+      "url": "/images/Z9/ToWWW.jpg",
+      "answers": [
+        "ToWWW",
+        "Tower of Wildly Wacky Wonders"
+      ]
+    }
+  ]
+}
