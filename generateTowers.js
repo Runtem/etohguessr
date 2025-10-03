@@ -15,6 +15,62 @@ const OUTPUT_FILE = path.join(IMAGES_DIR, "towers.json");
 const SHEET_URL =
     "https://docs.google.com/spreadsheets/d/1FlogEu7UQ2KZ4JjHQLs7jzv_S7QLxLfxAVJOEvQ231o/export?format=csv";
 
+// ✨ Hardcoded PoM images
+const POM_IMAGES = [
+    {
+        url: "/images/PoM/ToXIC.jpg",
+        answers: ["ToXIC", "Tower of Xerially Infuriating Calamity"],
+    },
+    {
+        url: "/images/PoM/ToOLC.jpg",
+        answers: ["ToOLC", "Tower of Overthinking Life Choices"],
+    },
+    {
+        url: "/images/PoM/ToVM.jpg",
+        answers: ["ToVM", "Tower of Vindinctive Maneuvers"],
+    },
+    {
+        url: "/images/PoM/ToSE.jpg",
+        answers: ["ToSE", "Tower of Shunning Excursion"],
+    },
+    {
+        url: "/images/PoM/ToVH.jpg",
+        answers: ["ToVH", "Tower of Vacant Hindrances"],
+    },
+    {
+        url: "/images/PoM/ToWM.jpg",
+        answers: ["ToWM", "Tower of Water Melon"],
+    },
+    {
+        url: "/images/PoM/ToTRP.jpg",
+        answers: ["ToTRP", "Tower of The Roof's Pique"],
+    },
+    {
+        url: "/images/PoM/ToEV.jpg",
+        answers: ["ToEV", "Tower of Eternal Void"],
+    },
+    {
+        url: "/images/PoM/ToBF.jpg",
+        answers: ["ToBF", "Tower of Blind Fate"],
+    },
+    {
+        url: "/images/PoM/ToSF.jpg",
+        answers: ["ToSF", "Tower of Spiralling Fates"],
+    },
+    {
+        url: "/images/PoM/ToMDC.jpg",
+        answers: ["ToMDC", "Tower of Modernistic Design Choices"],
+    },
+    {
+        url: "/images/PoM/WAT.jpg",
+        answers: ["WAT", "Was A Tower"],
+    },
+    {
+        url: "/images/PoM/CoIV.jpg",
+        answers: ["CoIV", "Citadel of Infinite Void"],
+    },
+];
+
 async function generate() {
     console.log("Fetching tower names from Google Sheets...");
     const res = await fetch(SHEET_URL);
@@ -71,7 +127,10 @@ async function generate() {
         });
     });
 
-    const result = { defaultImages: towers };
+    const result = {
+        defaultImages: towers,
+        pomImages: POM_IMAGES, // ✅ include hardcoded PoM
+    };
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2));
     console.log(`✅ towers.json generated at ${OUTPUT_FILE}`);

@@ -2744,5 +2744,98 @@
         "Tower of Wildly Wacky Wonders"
       ]
     }
+  ],
+  "pomImages": [
+    {
+      "url": "/images/PoM/ToXIC.jpg",
+      "answers": [
+        "ToXIC",
+        "Tower of Xerially Infuriating Calamity"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToOLC.jpg",
+      "answers": [
+        "ToOLC",
+        "Tower of Overthinking Life Choices"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToVM.jpg",
+      "answers": [
+        "ToVM",
+        "Tower of Vindinctive Maneuvers"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToSE.jpg",
+      "answers": [
+        "ToSE",
+        "Tower of Shunning Excursion"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToVH.jpg",
+      "answers": [
+        "ToVH",
+        "Tower of Vacant Hindrances"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToWM.jpg",
+      "answers": [
+        "ToWM",
+        "Tower of Water Melon"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToTRP.jpg",
+      "answers": [
+        "ToTRP",
+        "Tower of The Roof's Pique"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToEV.jpg",
+      "answers": [
+        "ToEV",
+        "Tower of Eternal Void"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToBF.jpg",
+      "answers": [
+        "ToBF",
+        "Tower of Blind Fate"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToSF.jpg",
+      "answers": [
+        "ToSF",
+        "Tower of Spiralling Fates"
+      ]
+    },
+    {
+      "url": "/images/PoM/ToMDC.jpg",
+      "answers": [
+        "ToMDC",
+        "Tower of Modernistic Design Choices"
+      ]
+    },
+    {
+      "url": "/images/PoM/WAT.jpg",
+      "answers": [
+        "WAT",
+        "Was A Tower"
+      ]
+    },
+    {
+      "url": "/images/PoM/CoIV.jpg",
+      "answers": [
+        "CoIV",
+        "Citadel of Infinite Void"
+      ]
+    }
   ]
 }

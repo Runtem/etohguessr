@@ -15,22 +15,28 @@ function checkDuplicates() {
     }
 
     const data = JSON.parse(fs.readFileSync(TOWERS_FILE, "utf-8"));
-    const towers = data.defaultImages || [];
+    const defaultTowers = data.defaultImages || [];
+    const pomTowers = data.pomImages || [];
 
     let found = false;
 
-    towers.forEach((tower) => {
-        const answers = tower.answers.map((a) => a.trim().toLowerCase());
-        if (answers.length > 1 && answers[0] === answers[1]) {
-            console.log(
-                `⚠️ Duplicate answers for ${tower.url}: [${tower.answers.join(", ")}]`
-            );
-            found = true;
-        }
-    });
+    function checkArray(towers, label) {
+        towers.forEach((tower) => {
+            const answers = tower.answers.map((a) => a.trim().toLowerCase());
+            if (answers.length > 1 && answers[0] === answers[1]) {
+                console.log(
+                    `⚠️ Duplicate answers in ${label} for ${tower.url}: [${tower.answers.join(", ")}]`
+                );
+                found = true;
+            }
+        });
+    }
+
+    checkArray(defaultTowers, "defaultImages");
+    checkArray(pomTowers, "pomImages");
 
     if (!found) {
-        console.log("✅ No duplicate answers found.");
+        console.log("✅ No duplicate answers found in either defaultImages or pomImages.");
     }
 }
 
