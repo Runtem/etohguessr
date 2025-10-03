@@ -42,7 +42,7 @@ const POM_IMAGES = [
         answers: ["ToWM", "Tower of Water Melon"],
     },
     {
-        url: "/images/PoM/ToTRP.jpg",
+        url: "/images/PoM/TotRP.jpg",
         answers: ["ToTRP", "Tower of The Roof's Pique"],
     },
     {
@@ -62,7 +62,7 @@ const POM_IMAGES = [
         answers: ["ToMDC", "Tower of Modernistic Design Choices"],
     },
     {
-        url: "/images/PoM/WAT.jpg",
+        url: "/images/PoM/WaT.jpg",
         answers: ["WAT", "Was A Tower"],
     },
     {
