@@ -261,6 +261,14 @@ export default function ImageGuessGame() {
                             <span className="font-semibold">ToM</span>) or full
                             tower name.
                         </div>
+                        <div className="text-sm opacity-80 mt-2">
+                            {defaultCount} towers available
+                            {includePoM ? ` + ${pomCount} PoM towers` : ""} ={" "}
+                            {defaultCount + (includePoM ? pomCount : 0)} total
+                        </div>
+                        <div className="text-sm opacity-60 mt-4">
+                            https://etohguessr.vercel.app/
+                        </div>
                     </CardContent>
                 </Card>
             </div>
@@ -362,6 +370,9 @@ export default function ImageGuessGame() {
                                 <div>Score: {score}</div>
                                 <div>High Score: {highScore}</div>
                             </div>
+                            <div className="text-sm opacity-60 mt-4">
+                                https://etohguessr.vercel.app/
+                            </div>
                         </>
                     ) : (
                         <>
@@ -385,6 +396,9 @@ export default function ImageGuessGame() {
                             <Button onClick={backToMenu} className="w-full">
                                 Back to Menu
                             </Button>
+                            <div className="text-sm opacity-60 mt-4">
+                                https://etohguessr.vercel.app/
+                            </div>
                         </>
                     )}
                 </CardContent>
