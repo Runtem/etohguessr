@@ -55,6 +55,12 @@ export default function ImageGuessGame() {
     const [allData, setAllData] = useState(null);
     const [loadingJson, setLoadingJson] = useState(true);
 
+    const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+    // screenshotMode is stateful so we can enable it transiently while the user is taking a screenshot
+    const [screenshotMode, setScreenshotMode] = useState(
+        urlParams ? urlParams.has("screenshot") : false
+    );
+
     const [includePoM, setIncludePoM] = useState(false);
     const [gameStarted, setGameStarted] = useState(false);
     const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -69,6 +75,76 @@ export default function ImageGuessGame() {
     const [lastCorrectAnswer, setLastCorrectAnswer] = useState(null);
 
     const [highScore, setHighScore] = useState(0);
+
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
+        let clearTimer = null;
+
+        const enableScreenshotMode = () => {
+            setScreenshotMode(true);
+            if (clearTimer) {
+                clearTimeout(clearTimer);
+                clearTimer = null;
+            }
+            // auto-disable after 3s in case no keyup is detected
+            clearTimer = setTimeout(() => setScreenshotMode(false), 3000);
+        };
+
+        const disableScreenshotMode = () => {
+            if (clearTimer) {
+                clearTimeout(clearTimer);
+                clearTimer = null;
+            }
+            // tiny delay to allow screenshot paint
+            setTimeout(() => setScreenshotMode(false), 150);
+        };
+
+        const onKeyDown = (e) => {
+            // PrintScreen key
+            if (e.key === "PrintScreen") {
+                enableScreenshotMode();
+                return;
+            }
+
+            // Ctrl/Cmd+Shift+S (common screenshot shortcut)
+            const isMod = e.ctrlKey || e.metaKey;
+            if (isMod && e.shiftKey && e.key.toLowerCase() === "s") {
+                enableScreenshotMode();
+            }
+        };
+
+        const onKeyUp = (e) => {
+            if (e.key === "PrintScreen") {
+                disableScreenshotMode();
+                return;
+            }
+
+            const isMod = e.ctrlKey || e.metaKey;
+            if (isMod && e.shiftKey && e.key.toLowerCase() === "s") {
+                disableScreenshotMode();
+            }
+        };
+
+        const onBlur = () => {
+            // when window loses focus (often happens during screenshot tools)
+            enableScreenshotMode();
+            // then disable shortly after
+            if (clearTimer) clearTimeout(clearTimer);
+            clearTimer = setTimeout(() => setScreenshotMode(false), 1000);
+        };
+
+        window.addEventListener("keydown", onKeyDown);
+        window.addEventListener("keyup", onKeyUp);
+        window.addEventListener("blur", onBlur);
+
+        return () => {
+            window.removeEventListener("keydown", onKeyDown);
+            window.removeEventListener("keyup", onKeyUp);
+            window.removeEventListener("blur", onBlur);
+            if (clearTimer) clearTimeout(clearTimer);
+        };
+    }, []);
 
     useEffect(() => {
         let mounted = true;
@@ -266,9 +342,9 @@ export default function ImageGuessGame() {
                             {includePoM ? ` + ${pomCount} PoM towers` : ""} ={" "}
                             {defaultCount + (includePoM ? pomCount : 0)} total
                         </div>
-                        <div className="text-sm opacity-60 mt-4">
+                        <a className="text-sm opacity-100 mt-4" href="https://etohguessr.vercel.app/">
                             https://etohguessr.vercel.app/
-                        </div>
+                        </a>
                     </CardContent>
                 </Card>
             </div>
@@ -370,9 +446,11 @@ export default function ImageGuessGame() {
                                 <div>Score: {score}</div>
                                 <div>High Score: {highScore}</div>
                             </div>
-                            <div className="text-sm opacity-60 mt-4">
-                                https://etohguessr.vercel.app/
-                            </div>
+                            {screenshotMode && (
+                                <div className="text-sm opacity-60 mt-4">
+                                    https://etohguessr.vercel.app/
+                                </div>
+                            )}
                         </>
                     ) : (
                         <>
@@ -396,9 +474,11 @@ export default function ImageGuessGame() {
                             <Button onClick={backToMenu} className="w-full">
                                 Back to Menu
                             </Button>
-                            <div className="text-sm opacity-60 mt-4">
-                                https://etohguessr.vercel.app/
-                            </div>
+                            {screenshotMode && (
+                                <div className="text-xxl opacity-60 mt-4">
+                                    https://etohguessr.vercel.app/
+                                </div>
+                            )}
                         </>
                     )}
                 </CardContent>
