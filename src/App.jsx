@@ -55,7 +55,10 @@ export default function ImageGuessGame() {
     const [allData, setAllData] = useState(null);
     const [loadingJson, setLoadingJson] = useState(true);
 
-    const urlParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+    const urlParams =
+        typeof window !== "undefined"
+            ? new URLSearchParams(window.location.search)
+            : null;
     // screenshotMode is stateful so we can enable it transiently while the user is taking a screenshot
     const [screenshotMode, setScreenshotMode] = useState(
         urlParams ? urlParams.has("screenshot") : false
@@ -339,10 +342,15 @@ export default function ImageGuessGame() {
                         </div>
                         <div className="text-sm opacity-80 mt-2">
                             {defaultCount} towers available
-                            {includePoM ? ` + ${pomCount} PoM towers` : ""} ={" "}
+                            {includePoM
+                                ? ` + ${pomCount} PoM towers`
+                                : ""} ={" "}
                             {defaultCount + (includePoM ? pomCount : 0)} total
                         </div>
-                        <a className="text-sm opacity-100 mt-4" href="https://etohguessr.vercel.app/">
+                        <a
+                            className="text-sm opacity-100 mt-4"
+                            href="https://etohguessr.vercel.app/"
+                        >
                             https://etohguessr.vercel.app/
                         </a>
                     </CardContent>
@@ -446,11 +454,12 @@ export default function ImageGuessGame() {
                                 <div>Score: {score}</div>
                                 <div>High Score: {highScore}</div>
                             </div>
-                            {screenshotMode && (
-                                <div className="text-sm opacity-60 mt-4">
-                                    https://etohguessr.vercel.app/
-                                </div>
-                            )}
+                            <a
+                                className="text-sm opacity-100 mt-4"
+                                href="https://etohguessr.vercel.app/"
+                            >
+                                https://etohguessr.vercel.app/
+                            </a>
                         </>
                     ) : (
                         <>
@@ -474,11 +483,12 @@ export default function ImageGuessGame() {
                             <Button onClick={backToMenu} className="w-full">
                                 Back to Menu
                             </Button>
-                            {screenshotMode && (
-                                <div className="text-xxl opacity-60 mt-4">
-                                    https://etohguessr.vercel.app/
-                                </div>
-                            )}
+                            <a
+                                className="text-sm opacity-100 mt-4"
+                                href="https://etohguessr.vercel.app/"
+                            >
+                                https://etohguessr.vercel.app/
+                            </a>
                         </>
                     )}
                 </CardContent>
