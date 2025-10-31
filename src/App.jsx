@@ -348,10 +348,10 @@ export default function ImageGuessGame() {
                             {defaultCount + (includePoM ? pomCount : 0)} total
                         </div>
                         <a
-                            className="text-sm opacity-100 mt-4"
+                            className="text-xl opacity-100 mt-4"
                             href="https://etohguessr.vercel.app/"
                         >
-                            https://etohguessr.vercel.app/
+                            THE URL IS https://etohguessr.vercel.app/
                         </a>
                     </CardContent>
                 </Card>
@@ -455,10 +455,10 @@ export default function ImageGuessGame() {
                                 <div>High Score: {highScore}</div>
                             </div>
                             <a
-                                className="text-sm opacity-100 mt-4"
+                                className="text-xl opacity-100 mt-4"
                                 href="https://etohguessr.vercel.app/"
                             >
-                                https://etohguessr.vercel.app/
+                                THE URL IS https://etohguessr.vercel.app/
                             </a>
                         </>
                     ) : (
@@ -484,10 +484,10 @@ export default function ImageGuessGame() {
                                 Back to Menu
                             </Button>
                             <a
-                                className="text-sm opacity-100 mt-4"
+                                className="text-xl opacity-100 mt-4"
                                 href="https://etohguessr.vercel.app/"
                             >
-                                https://etohguessr.vercel.app/
+                                THE URL IS https://etohguessr.vercel.app/
                             </a>
                         </>
                     )}
